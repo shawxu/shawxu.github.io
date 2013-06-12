@@ -42,10 +42,10 @@
 		, logEntries = []
 		, logEntry = [
 			'qzone' //product name
-			, '' //logLevel
-			, '' //absTime
-			, '' //performanceNow
-			, '' //logMessage
+			, '' //log level
+			, '' //absolute time
+			, '' //performance now time
+			, '' //log message
 		]
 		, logStorage = {
 			debug:			[]
@@ -109,7 +109,7 @@
 				LOG_MAP[k] && (proto[k] = consoleFactory(k));
 			}
 
-			require.async('./plugins/viewport', function(vp){
+			(require.async || require)(['./plugins/viewport'], function(vp){
 					vp.bootstrap(LOG_MAP);
 				});
 		}
@@ -117,11 +117,12 @@
 		proto.config = function(opts){
 			opts = opts || {};
 			opts.productName && (logEntry[0] = opts.productName);
+			opts.reportUrl && (reportUrl = opts.reportUrl);
 
 			//TODO
 		};
 
-		proto.getLogEntriesText = function(filter){
+		proto.get = function(filter){
 			var r
 			;
 			r = logStorage[filter] || logEntries;
@@ -129,7 +130,7 @@
 		};
 
 		proto.report = function(rurl, filter){
-			require.async('./plugins/report', function(rpt){
+			(require.async || require)(['./plugins/report'], function(rpt){
 					rpt.bootstrap({
 						'reportUrl':		rurl || reportUrl
 						, 'logLevelFilter':	filter
