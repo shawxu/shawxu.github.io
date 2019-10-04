@@ -1,1 +1,10 @@
+.DS_Store
+
 .project
+
+package-lock.json
+
+*.log
+
+/node_modules
+/tools

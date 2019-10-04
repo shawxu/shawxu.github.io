@@ -1,0 +1,31 @@
+{
+  "name": "shawxu-github-homepage",
+  "version": "0.1.0",
+  "description": "Shaw Xu's home page on github.io :)",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawxu/shawxu.github.io.git"
+  },
+  "keywords": [
+    "shaw",
+    "xu",
+    "shawxu",
+    "home",
+    "page",
+    "github",
+    "personal"
+  ],
+  "author": "shawxu",
+  "license": "MIT",
+  "homepage": "https://www.shawxu.net"
+}
