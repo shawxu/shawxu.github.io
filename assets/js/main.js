@@ -9,11 +9,12 @@ requirejs.config({
       // Also, the path should NOT include
       // the '.js' file extension.
       jquery: 'lib/jquery',
-      //popperjs: 'lib/popper', //不要了，bootstrap对这里的依赖太紧
-      bootstrap: 'lib/bootstrap.bundle' //用包含popper.js的版本
+      popperjs: 'lib/popper',
+      //bootstrap: 'lib/bootstrap', //只使用附加popper以后的bootstrap，在requirejs体系更方便
+      bootstrapBundle: 'lib/bootstrap.bundle'
   }
 });
 
-require(['jquery', 'bootstrap'], function($, pper, bts){
+require(['jquery', 'bootstrapBundle'], function($, bts){
   console.log('jq loaded!');
 });
