@@ -46,6 +46,7 @@ button#mpMenu {
   margin-right: 21px;
   background-image: url("../image/wechat-mp-menu-button.png");
   background-repeat: no-repeat;
+  background-color: #477df7;
 }
 
 button#mpNav {
