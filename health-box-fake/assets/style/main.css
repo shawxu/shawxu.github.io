@@ -1,0 +1,175 @@
+/* main stylesheet file */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #F1F1F1;
+  letter-spacing: 4px;
+}
+
+header {
+  padding-top: 20px;
+  background-color: #477df7;
+}
+
+button {
+  border-style: none;
+}
+
+nav#navBar {
+  /* width: 1010px; */
+  height: 110px;
+  margin: 0 auto 0;
+  background-color: #477df7;
+}
+
+nav#navBar h1 {
+  width: 180px;
+  height: 58px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-left: 12px;
+  color: white;
+  font-size: 48px;
+  font-weight: initial;
+}
+
+#mainContainer {
+  /* width: 1125px; */
+  background-size: 100% 280px;
+  background-image: url("../image/top-bar-background.png");
+  background-repeat: no-repeat;
+  padding-top: 72px;
+}
+
+button#mpMenu {
+  width: 265px;
+  height: 98px;
+  float: right;
+  margin-right: 24px;
+  background-image: url("../image/wechat-mp-menu-button.png");
+  background-repeat: no-repeat;
+}
+
+button#mpNav {
+  width: 81px;
+  height: 76px;
+  margin-top: 28px;
+  float: left;
+  margin-left: 24px;
+  background-color: #477df7;
+  background-image: url("../image/wechat-back-button.png");
+  background-position-x: 22px;
+  background-repeat: no-repeat;
+}
+
+#infoContainer {
+  width: 1006px;
+  /* height: 1500px; */
+  margin: 0 auto 0;
+  background-color: white; /* test */
+  border-radius: 22px;
+  padding-top: 62px;
+}
+
+i.icon {
+  display: block;
+}
+
+#timeIconBar h2 {
+  color: #707070;
+  text-align: center;
+  width: 400px;
+  height: 102px;
+  margin: 0 auto;
+  font-size: 46px;
+  font-weight: initial;
+}
+
+i#healthBoxIcon {
+  width: 115px;
+  height: 115px;
+  background-image: url("../image/health-box-icon.png");
+  float: left;
+  margin-left: 58px;
+}
+
+i#smallQRCode {
+  width: 144px;
+  height: 114px;
+  background-image: url("../image/top-right-small-qr-bar-button.png");
+  float: right;
+}
+
+#photoContainer {
+  width: 590px;
+  height: 590px;
+  border: dotted 30px cornflowerblue;
+  margin: 54px auto 0;
+}
+
+img#photoId {
+  display: block;
+  width: 566px;
+  height: 566px;
+  margin: 12px auto 0;
+  border-radius: 12px;
+}
+
+#passContainer {
+  width: 574px;
+  margin: 45px auto 0;
+  padding-left: 60px;
+}
+
+#tableInfo {
+  width: 888px;
+  height: 342px;
+  margin: 64px auto 0;
+  font-size: 46px;
+  font-weight: initial;
+}
+
+#tableInfo .aRight {
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+#tableInfo .aTitle {
+  color: #9c9c9c;
+}
+
+#tableInfo .aValue {
+  color: #333333;
+}
+
+#tableInfo .aHighLight {
+  color: #e13f3f;
+}
+
+#tableInfo .aPlaceHolder {
+  color: white;
+}
+
+#ft76 {
+  height: 70px;
+}
+
+button#backHome {
+  display: block;
+  width: 1006px;
+  height: 139px;
+  margin: 64px auto 0;
+  border-radius: 22px;
+  background-color: #3f8adf;
+  font-size: 48px;
+  font-weight: initial;
+  color: white;
+}
+
+
+footer p {
+  color: #bbbbbb;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 45px;
+}
