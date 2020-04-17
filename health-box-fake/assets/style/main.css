@@ -61,6 +61,15 @@ button#mpNav {
   background-repeat: no-repeat;
 }
 
+#formContainer {
+  width: 89.4%; /* 1006 / 1125 */
+  height: 150px;
+  margin: 0 auto 0;
+  background-color: white; /* test */
+  border-radius: 22px;
+  padding-top: 50px;
+}
+
 #infoContainer {
   /* width: 1006px; */
   /* height: 1500px; */

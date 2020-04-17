@@ -19,14 +19,14 @@ require(['domReady'], (domReady) => {
 }); */
 
 ((_w, _d) => {
+  const SECOND = 1000;
+  let [tth, dtv, dev] = _d.querySelectorAll('#timeIconBar h2, #todayValue, #edgeValue');
 
-  let [tth] = _d.querySelectorAll('#timeIconBar h2');
+  //let [dtv] = _d.querySelectorAll('#todayValue');
 
-  let [dtv] = _d.querySelectorAll('#todayValue');
+  //let [dev] = _d.querySelectorAll('#edgeValue');
 
-  let [dev] = _d.querySelectorAll('#edgeValue');
-
-  function timerShow(timeTitleH1, dTodayValue, dEdgeValue){
+  function timerShow(timeTitleH1, dTodayValue, dEdgeValue) {
     let tm = new Date();
     let yr = tm.getFullYear();
   
@@ -64,5 +64,29 @@ require(['domReady'], (domReady) => {
     timerShow._counter_++;
   }
 
-  _w.setInterval(timerShow, 1000, tth, dtv, dev);
+  function photoFileShow(evt) {
+    let [phc, ifc, pid] = _d.querySelectorAll('#formContainer, #infoContainer, #photoId');
+
+    pid.src = evt.target.result;
+    ifc.style.display = '';
+    phc.style.display = 'none';
+  }
+
+  function filePreview(evt) {
+    let fr, f0;
+    if(evt && evt.target && evt.target.files && (f0 = evt.target.files[0])) {
+      fr = new FileReader();
+      fr.readAsDataURL(f0); //base64编码
+      fr.addEventListener('load', photoFileShow);
+    }
+  }
+
+  function initEventsBind() {
+    let fm = _d.getElementById('loadPhoto');
+
+    fm && fm.addEventListener && fm.addEventListener('change', filePreview);
+  }
+
+  initEventsBind();
+  _w.setInterval(timerShow, SECOND, tth, dtv, dev);
 })(window, document);
