@@ -14,7 +14,12 @@
       </nav>
     </header>
     <main id="mainContainer">
-      <section id="infoContainer">
+      <section id="formContainer">
+        <form id="loadPhoto">
+          <input type="file" name="localPhoto" accept="image/png,image/jpeg">
+        </form>
+      </section>
+      <section id="infoContainer" style="display:none;"> <!-- 一开始先隐藏 -->
         <div id="timeIconBar">
           <i class="icon" id="smallQRCode"></i>
           <i class="icon" id="healthBoxIcon"></i>
