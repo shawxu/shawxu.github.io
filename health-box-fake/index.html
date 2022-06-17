@@ -30,16 +30,47 @@
           <img width="493" height="493" id="photoId" src="assets/image/xx-photo.jpg" alt="Photo ID">
         </div>
         <div id="passContainer">
-          <img width="498" height="104" src="assets/image/green-pass.png" alt="Green Pass">
+          <!--<img width="498" height="104" src="assets/image/green-pass.png" alt="Green Pass">-->
+          <img class="vmiddle" width="116" height="116" src="assets/image/green-code.png" alt="Green Code">
+          <span class="vmiddle" id="passTxt">扫码未见异常</span>
+          <img class="vmiddle" width="63" height="63" src="assets/image/question-mark.png" alt="Question Mark">
         </div>
+        <div id="passInfo">
+          <dl>
+            <dd>
+              <p class="fright" id="pcrDayInfo">
+                <span class="gtxt">时间</span>
+                <span id="dayCount">1</span>
+                <span class="gtxt">天</span>
+                <img width="31" height="32" src="assets/image/refresh-icon.png" alt="refresh">
+              </p>
+              <p id="pcrContainer">
+                <img class="vmiddle" width="230" height="70" src="assets/image/pcr-test-label.png" alt="PCR test">
+                <span class="vmiddle" id="negTxt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;阴性&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              </p>
+            </dd>
+            <dd id="vacinInfo">
+              <p class="fright" id="vacinFoldInfo">
+                <span class="vmiddle gtxt">查看</span>
+                <img class="vmiddle" width="34" height="23" src="assets/image/unfold-icon.png" alt="unfold">
+              </p>
+              <p id="vacinContainer">
+                <img class="vmiddle" width="230" height="70" src="assets/image/vacin-label.png" alt="Vacin">
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <div class="ft65"> </div>
+      </section>
+      <section id="infoContainer1" style="display:none;"> <!-- 一开始先隐藏 -->
         <table id="tableInfo">
           <tr>
             <td class="aTitle">姓<span class="aPlaceHolder">姓名</span>名：</td>
-            <td class="aRight aValue">徐*</td>
+            <td class="aRight aValue">冯*</td>
           </tr>
           <tr>
             <td class="aTitle">身份证号：</td>
-            <td class="aRight aValue">65**************55</td>
+            <td class="aRight aValue">12**************55</td>
           </tr>
           <tr>
             <td class="aTitle">查询时间：</td>
@@ -50,7 +81,7 @@
             <td class="aRight aHighLight" id="edgeValue">mm-dd 24:00</td>
           </tr>
         </table>
-        <div id="ft76"></div>
+        <div class="ft76"> </div>
       </section>
       <button id="backHome">返回首页</button>
     </main>

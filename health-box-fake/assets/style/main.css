@@ -25,7 +25,7 @@ nav#navBar h1 {
   width: 158px;
   height: 51px;
   margin: 0 auto;
-  padding-top: 14px;
+  padding-top: 18px;
   padding-left: 10px;
   color: white;
   font-size: 42px;
@@ -85,6 +85,16 @@ button#mpNav {
   padding-top: 56px;
 }
 
+#infoContainer1 {
+  /* width: 1006px; */
+  /* height: 1500px; */
+  width: 89.4%; /* 1006 / 1125 */
+  margin: 32px auto 0;
+  background-color: white; /* test */
+  border-radius: 22px;
+  padding-top: 22px;
+}
+
 i.icon {
   display: block;
 }
@@ -117,8 +127,9 @@ i#smallQRCode {
 #photoContainer {
   width: 512px;
   height: 512px;
-  border: dotted 26px cornflowerblue;
+  border: dotted 25px cornflowerblue;
   margin: 46px auto 0;
+  border-radius: 38px;
 }
 
 img#photoId {
@@ -130,16 +141,79 @@ img#photoId {
 }
 
 #passContainer {
-  width: 500px;
-  margin: 40px auto 0;
+  width: 726px;
+  margin: 44px auto 0;
   padding-left: 52px;
+}
+
+.vmiddle {
+  vertical-align: middle;
+}
+
+#passTxt {
+  color: rgb(93, 196, 61);
+  font-size: 74px;
+  font-family: 'STXihei';
+  font-weight: bold;
+  padding-left: 18px;
+}
+
+#passInfo {
+  width: 95%;
+  height: 260px;
+  background-color: rgb(246, 246, 246);
+  margin: 40px auto 15px;
+  border-radius: 2px 2px 20px 20px;
+}
+
+#passInfo dl {
+  width: 760px;
+  margin: 0 auto;
+}
+
+#passInfo dd {
+  margin-left: 0;
+  height: 125px;
+}
+
+#pcrContainer {
+  padding-top: 26px;
+}
+
+#negTxt {
+  font-family: 'STXihei';
+  font-size: 57px;
+  font-weight: bold;
+  color: #3b8df7;
+}
+
+#dayCount {
+  font-size: 88px;
+  font-weight: bold;
+  color: #3b8df7;
+}
+
+#pcrDayInfo {
+  margin-top: -9px;
+}
+
+#vacinInfo {
+  border-top: solid 2px #e2e2e2;
+}
+
+#vacinFoldInfo {
+  margin-top: 42px;
+}
+
+#vacinContainer {
+  padding-top: 18px;
 }
 
 #tableInfo {
   /* width: 888px; */
   width: 88.3%; /* 888 / 1006 */
   height: 298px;
-  margin: 56px auto 0;
+  margin: 5px auto 0;
   font-size: 40px;
   font-weight: initial;
 }
@@ -165,8 +239,21 @@ img#photoId {
   color: white;
 }
 
-#ft76 {
-  height: 63px;
+.gtxt {
+  font-size: 36px;
+  color: #9c9c9c;
+}
+
+.ft76 {
+  height: 25px;
+}
+
+.ft65 {
+  height: 13px;
+}
+
+.fright {
+  float: right;
 }
 
 button#backHome {
