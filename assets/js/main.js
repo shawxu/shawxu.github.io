@@ -20,5 +20,5 @@ require([/*'jquery', */'bootstrapBundle', 'consolePlus'], function(/*$, */bts, c
   cp.inject();
   console.log('jq and bootstrap loaded!');
   //$('div.container p')[0].innerText = cp.get();
-  document.querySelector("p#xx_main_content").innerText = cp.get();
+  document.querySelector("p#xx_main_content").textContent = cp.get();
 });
