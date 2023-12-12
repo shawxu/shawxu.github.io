@@ -24,7 +24,7 @@ define((require) => {
         , "warn":   []
       }
     , clearTimes = 0
-    , reportUrlCfg = "https://shawxu.cn/blog/add/" //上报结果的接口URL，可配置
+    , reportUrlCfg = "https://shawxu.cn/log/" //上报结果的接口URL，可配置
     , injected = false
     , silent = false;
 
@@ -33,8 +33,8 @@ define((require) => {
       return (...args) => {
         let t;
         logEntry[1] = n;
-        logEntry[2] = performance.now();
-        logEntry[3] = args.join(" - ");
+        logEntry[2] = performance.now().toFixed(3); //小数点后3位够了
+        logEntry[3] = args.join(" ");
 
         logEntries.push(t = logEntry.join("\t"));
         logStorage[n].push(t);
@@ -115,7 +115,7 @@ define((require) => {
     }
   };
 
-  proto.info(logEntry[0], " loaded, hello world!");
+  proto.info(logEntry[0], "loaded, hello world!");
 
   return proto; //export consolePlus
 });
