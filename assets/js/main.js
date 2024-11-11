@@ -12,7 +12,7 @@ requirejs.config({
       //popperjs: 'lib/popper',
       consolePlus: 'console-plus.min',
       //bootstrap: 'lib/bootstrap', //只使用附加popper以后的bootstrap，在requirejs体系更方便
-      bootstrapBundle: 'https://s3.shawxu.net/js/lib/bootstrap/bootstrap.bundle.min'
+      bootstrapBundle: 'https://shawxu.net/js/lib/bootstrap/bootstrap.bundle.min'
   }
 });
 
